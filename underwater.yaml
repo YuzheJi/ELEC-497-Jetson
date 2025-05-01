@@ -1,0 +1,6 @@
+path: D:/University/Year 2-s Term 1/ELEC 497 Jetson Nano/datasets/underwater objects
+train: images/train
+val: images/val
+
+nc: 2
+names: ['fish','crab']
