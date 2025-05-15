@@ -51,8 +51,7 @@ class application:
 
         if self.cap.isOpened():
             self.cap.release()
-
-
+print("Program Start")
 root = tk.Tk()
 app = application(root)
 root.mainloop()

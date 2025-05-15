@@ -15,7 +15,7 @@ model = YOLO("yolo11n.pt")
 # metrics = model.val()
 
 # 对图像执行目标检测
-results = model("test.jpg")  # 对图像进行预测
+results = model("frame.png")  # 对图像进行预测
 results[0].show()  # 显示结果
 
 # # 将模型导出为 ONNX 格式以进行部署
