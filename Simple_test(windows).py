@@ -11,7 +11,7 @@ class application:
         self.root = root
         self.root.title("Computer Vision Demo")
         root.geometry("1300x700+10+50")
-        self.model = YOLO("yolo11n.pt")
+        self.model = YOLO("person.pt")
         self.cap = cv2.VideoCapture(0, cv2.CAP_DSHOW) # system camera
         self.label1 = tk.Label(root)
         self.label1.pack(pady=10, side='left')
@@ -48,6 +48,7 @@ class application:
         if self.cap.isOpened():
             self.cap.release()
 print("Program Start")
+
 root = tk.Tk()
 app = application(root)
 root.mainloop()

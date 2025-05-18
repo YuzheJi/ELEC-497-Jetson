@@ -1,8 +1,8 @@
 task: detect
 mode: train
 model: yolo11n.pt
-data: coco8.yaml
-epochs: 100
+data: D:\University\Year 2-s Term 1\ELEC 497-Jetson nano\datasets\people\data.yaml
+epochs: 10
 time: null
 patience: 100
 batch: 16

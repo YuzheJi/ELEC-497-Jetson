@@ -12,8 +12,7 @@ def warmup_model(model, input_size=(640, 640), device='cuda', repeat=3):
         for i in range(repeat):
             start = time.time()
             model(dummy)
-            print(f"Warmup run {i+1} took {time.time() - start:.4f} seconds")
-        print("GPU warm-up DONE!")
+        print("✅: GPU warm-up DONE!")
 
 def dir_search(dir_name, extensions):
     for ext in extensions:
