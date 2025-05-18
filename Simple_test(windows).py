@@ -26,12 +26,8 @@ class application:
             frame = cv2.flip(frame, 1)
             img = Image.fromarray(frame)
             imgtk = ImageTk.PhotoImage(image=img)
-
-            filename = 'frame.png' 
-            cv2.imwrite(r'camera file' + '\\' + filename, frame)
-            print(filename + ' is saved') 
       
-            results = self.model(r"camera file\frame.png")  
+            results = self.model(frame)  
             frame_result = results[0].plot()
             img_result = Image.fromarray(frame_result)
             imgtk_result = ImageTk.PhotoImage(image=img_result)
