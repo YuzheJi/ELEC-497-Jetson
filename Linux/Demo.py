@@ -43,7 +43,6 @@ extensions_full = ["*.pt", "*.onnx", "*.engine"]
 extensions_exp = ["*.pt"]
 
 while True:
-    
     time.sleep(1)
     print("\nThis is a demo for YOLO11 made by Ji, Terry and Emma")
     print("Current dir:"+str(dir_name))
@@ -119,7 +118,6 @@ while True:
             cv2.imshow('Detection', frame_anotated)
             if cv2.waitKey(1) == ord('q'):
                 break
-        cap.release()
         cv2.destroyAllWindows()
 
     elif selection == '0':
@@ -127,5 +125,6 @@ while True:
         break
     else:
         print("Unknown command...")
+cap.release()
     
 
